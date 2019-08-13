@@ -1,0 +1,38 @@
+
+
+<html>
+<head>
+
+  <script>
+  function showted()
+  {
+  {
+    var tedrequest= new XMLHttpRequest();
+    tedrequest.onreadystatechange = function()
+    {
+      if (this.readyState==4 && this.status == 200)
+      {
+          document.getElementById("span").innerHTML =this.responseText;
+      }
+    };
+  //  tedrequest.open("POST", "http://results.unipune.ac.in/(S(dakavrfzlr35qeql4xjy5mqf))/SE2015_CreditPattern.aspx?Course_Code=70315&Course_Name=TE2015+OCT+2018+(Credit)", true);
+    xmlRequest.open("POST", action, true);
+    xmlRequest.setRequestHeader("Content-Type", "application/x-www-form-urlencoded; charset=utf-8");
+    tedrequest.send("Course_Code=70315&Course_Name=TE2015+OCT+2018+(Credit)");
+  }
+}
+  </script>
+  <title>
+    select teams
+  </title>
+
+  </head>
+  <body>
+<input type="button" value="click" onclick="showted()">
+<span id="yy">
+  </span>
+</body>
+</html>
+
+
+    
